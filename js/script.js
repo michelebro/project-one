@@ -4,7 +4,7 @@ $.ajax({
     contentType: "application/json",
     data: JSON.stringify({
       query: `query {
-        characters(filter: {name: "naruto" }) {
+        characters(filter: {name: userIput }) {
           info {
             count
             pages
@@ -30,13 +30,13 @@ $.ajax({
   }).then(data => console.log(data))
 
 
-//   et movieData, userInput
+  et character, userInput
 
-// $("form").on("submit", handleGetData)
+$("form").on("submit", handleGetData)
 
-// function handleGetData(event) {
-//   event.preventDefault()
-//   userInput = $input.val()
+function handleGetData(event) {
+  event.preventDefault()
+  userInput = $input.val()
   
 //   $.ajax({
 //     url: "https://www.omdbapi.com/?apikey=53aa2cd6&t=" + userInput,
@@ -51,8 +51,8 @@ $.ajax({
 //   )
 // }
 
-// function render() {
-//   $title.text(movieData.Title)
-//   $year.text(movieData.Year)
-//   $rated.text(movieData.Rated)
-// }
+function render() {
+  $name.text(character.name)
+  $village.text(character.village)
+  $rank.text(character.rank)
+}
