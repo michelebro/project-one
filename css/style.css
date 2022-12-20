@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    background-color: orange;
+    font-family: 'Permanent Marker', cursive;
+    justify-content: center;
+}
+
+#name, h2 {
+    font-size: 50px;
+}
+form {
+   justify-content: flex-end;
+}
+
+input, button {
+    font-family: 'Permanent Marker', cursive;
+}
