@@ -47,8 +47,9 @@ function render(data) {
   $("#rank").text(data.data.characters.results[0].rank)
   $("#age").text(data.data.characters.results[0].age)
   $("#firstAnimeAppearance").text(data.data.characters.results[0].firstAnimeAppearance)
-  $("#firstManagaAppearance").text(data.data.characters.results[0].firstManagaAppearanc)
+  $("#firstMangaAppearance").text(data.data.characters.results[0].firstMangaAppearance)
   $("#description").text(data.data.characters.results[0].description)
-  $("#notableFeatures").text(data.data.characters.results[0].notableFeature)
+  $("#notableFeatures").text(data.data.characters.results[0].notableFeatures)
   $("#avatarSrc").text(data.data.characters.results[0].avatarSrc)
+  $("#nameMeaning").text(data.data.characters.results[0].nameMeaning)
 }
