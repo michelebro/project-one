@@ -6,7 +6,6 @@ HTML5
 CSS3
 Javascript
 jQuery
-AJAX
 Google Fonts
 GraphQL
 
